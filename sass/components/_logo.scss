@@ -1,0 +1,32 @@
+// logo-header
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--button-color);
+
+  transition: color var(--transition);
+
+  &:hover,
+  &:focus {
+    color: none;
+  }
+}
+.studio-black {
+  color: var(--primary-text-color);
+}
+.studio-wight {
+  color: var(--accent-text-color);
+}
+
+.page-header__logo {
+  margin-right: 93px;
+}
+
+.footer__logo {
+  display: block;
+  margin-bottom: 20px;
+}

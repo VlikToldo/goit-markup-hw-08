@@ -1,0 +1,46 @@
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  background-color: #c4c4c4;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/photo-hw4.jpg');
+  background-size: cover;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  margin: 0 auto 30px;
+  max-width: 696px;
+
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--accent-text-color);
+}
+
+.btn {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  padding: 10px 32px 10px 32px;
+
+  color: var(--accent-text-color);
+  background-color: var(--button-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: var(--button-color);
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+
+  transition: background-color var(--transition);
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+}

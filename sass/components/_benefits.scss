@@ -1,0 +1,45 @@
+.section-benefits {
+  padding-top: 94px;
+}
+
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.benefits-item {
+  max-width: 270px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.box-icon {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.benefits-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.benefits-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  margin: 0;
+  color: var(--title-text-color);
+}
