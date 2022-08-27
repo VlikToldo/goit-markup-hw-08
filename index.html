@@ -26,7 +26,7 @@
           <a href="./index.html" lang="en" class="logo page-header__logo">
             Web<span class="studio-black">Studio</span>
           </a>
-          <ul class="menu list">
+          <ul class="menu menu-list">
             <li class="menu__item">
               <a href="./index.html" class="menu__link menu__link__current link"> Студия </a>
             </li>
@@ -44,7 +44,7 @@
           </svg>
         </button>
 
-        <ul class="contact list">
+        <ul class="contact contact-list">
           <li class="contact__item">
             <a href="mailto:info@devstudio.com" class="contact__link">
               <svg class="contact__icon__mail" width="16" height="12">
@@ -117,7 +117,7 @@
       </div>
     </header>
     <!-- Main -->
-    <!-- <main>
+    <main>
       <section class="hero">
         <div class="hero-container container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
@@ -181,19 +181,49 @@
           <ul class="photo-list">
             <li class="photo-item">
               <div class="div-gallery-overlay">
-                <img src="./images/img.jpg" alt="фото компьютера " width="370" height="294" />
+                <img
+                  srcset="
+                    ./images/gallery-desktop-1.img.jpg    1x,
+                    ./images/gallery-desktop-1.img@2x.jpg 2x
+                  "
+                  src="./images/gallery-desktop-1.img.jpg"
+                  alt="фото компьютера "
+                  width="370"
+                  height="294"
+                />
+
                 <p class="gallery-overlay">десктопные приложения</p>
               </div>
             </li>
             <li class="photo-item">
               <div class="div-gallery-overlay">
-                <img src="./images/img1.jpg" alt="фото ноутбука" width="370" height="294" />
+                <img
+                  srcset="
+                    ./images/gallery-desktop-2.img.jpg    1x,
+                    ./images/gallery-desktop-2.img@2x.jpg 2x
+                  "
+                  src="./images/gallery-desktop-2.img.jpg"
+                  alt="фото ноутбука"
+                  width="370"
+                  height="294"
+                />
+
                 <p class="gallery-overlay">мобильные приложения</p>
               </div>
             </li>
             <li class="photo-item">
               <div class="div-gallery-overlay">
-                <img src="./images/img2.jpg" alt="фото планшета" width="370" height="294" />
+                <img
+                  srcset="
+                    ./images/gallery-desktop-3.img.jpg    1x,
+                    ./images/gallery-desktop-3.img@2x.jpg 2x
+                  "
+                  src="./images/gallery-desktop-3.img.jpg"
+                  alt="фото планшета"
+                  width="370"
+                  height="294"
+                />
+
                 <p class="gallery-overlay">дизайнерские решения</p>
               </div>
             </li>
@@ -205,7 +235,22 @@
           <h2 class="command-title">Наша команда</h2>
           <ul class="command-list">
             <li class="command-item">
-              <img src="./images/img-team1.jpg" alt="Игорь Демьяненко" width="270" height="260" />
+              <picture>
+                <source
+                  media="(min-width: 320px)"
+                  srcset="./images/team-1.img.jpg 1x, ./images/team-1.img@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team-1-tablet.img.jpg 1x, ./images/team-1-tablet.img@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team-1-desktop.img.jpg 1x, ./images/team-1-desktop.img@2x.jpg 2x"
+                />
+                <img src="./images/team-1-desktop.img.jpg" alt="Игорь Демьяненко" />
+              </picture>
+
               <div class="div-command-item">
                 <h3 class="specialist">Игорь Демьяненко</h3>
                 <p lang="en" class="position">Product Designer</p>
@@ -242,7 +287,22 @@
               </div>
             </li>
             <li class="command-item">
-              <img src="./images/img-team2.jpg" alt="Ольга Репина" width="270" height="260" />
+              <picture>
+                <source
+                  media="(min-width: 320px)"
+                  srcset="./images/team-2.img.jpg 1x, ./images/team-2.img@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team-2-tablet.img.jpg 1x, ./images/team-2-tablet.img@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team-2-desktop.img.jpg 1x, ./images/team-2-desktop.img@2x.jpg 2x"
+                />
+                <img src="./images/team-2-desktop.img.jpg" alt="Ольга Репина" />
+              </picture>
+
               <div class="div-command-item">
                 <h3 class="specialist">Ольга Репина</h3>
                 <p lang="en" class="position">Frontend Developer</p>
@@ -279,7 +339,22 @@
               </div>
             </li>
             <li class="command-item">
-              <img src="./images/img-team3.jpg" alt="Николай Тарасов" width="270" height="260" />
+              <picture>
+                <source
+                  media="(min-width: 320px)"
+                  srcset="./images/team-3.img.jpg 1x, ./images/team-3.img@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team-3-tablet.img.jpg 1x, ./images/team-3-tablet.img@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team-3-desktop.img.jpg 1x, ./images/team-3-desktop.img@2x.jpg 2x"
+                />
+                <img src="./images/team-3-desktop.img.jpg" alt="Николай Тарасов" />
+              </picture>
+
               <div class="div-command-item">
                 <h3 class="specialist">Николай Тарасов</h3>
                 <p lang="en" class="position">Marketing</p>
@@ -316,7 +391,22 @@
               </div>
             </li>
             <li class="command-item">
-              <img src="./images/img-team4.jpg" alt="Михаил Ермаков" width="270" height="260" />
+              <picture>
+                <source
+                  media="(min-width: 320px)"
+                  srcset="./images/team-4.img.jpg 1x, ./images/team-4.img@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team-4-tablet.img.jpg 1x, ./images/team-4-tablet.img@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team-4-desktop.img.jpg 1x, ./images/team-4-desktop.img@2x.jpg 2x"
+                />
+                <img src="./images/team-4-desktop.img.jpg" alt="Михаил Ермаков" />
+              </picture>
+
               <div class="div-command-item">
                 <h3 class="specialist">Михаил Ермаков</h3>
                 <p lang="en" class="position">UI Designer</p>
@@ -404,7 +494,7 @@
           </ul>
         </div>
       </section>
-    </main> -->
+    </main>
     <!-- Footer -->
     <!-- <footer class="footer">
       <div class="container footer-container">
