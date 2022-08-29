@@ -42,7 +42,13 @@
   gap: 30px;
 }
 
+.product-item {
+  display: flex;
+  flex-direction: column;
+}
+
 .product-link {
+  flex-grow: 2;
   display: block;
   background: #ffffff;
   border: 1px solid #eeeeee;
